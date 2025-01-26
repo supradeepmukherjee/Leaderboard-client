@@ -1,9 +1,7 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import AddUser from "./components/ui/AddUser";
+import AddUser from "./components/AddUser";
 import SelectUser from "./components/SelectUser";
 import { Toaster } from "@/components/ui/toaster"
-
-const server = import.meta.env.VITE_SERVER
 
 function App() {
   return (
