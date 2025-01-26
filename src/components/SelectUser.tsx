@@ -1,12 +1,12 @@
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-import { toast } from "@/hooks/use-toast"
-import { Form, FormControl, FormField, FormItem, FormMessage, } from "@/components/ui/form"
-import { useEffect, useState } from "react";
+import { Form, FormControl, FormField, FormItem, FormMessage, } from "@/components/ui/form";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { toast } from "@/hooks/use-toast";
+import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 const FormSchema = z.object({ name: z.string({ required_error: "Please select a User's Name" }) })
 
@@ -52,7 +52,7 @@ const SelectUser = () => {
       })
   }, [])
   return (
-    <div className="border-t-2 w-screen">
+    <div className="border-y-2 w-screen pb-10">
       <h2 className="mb-10 text-xl text-center mt-10 sm:text-5xl dark:text-white text-black">
         Select User
       </h2>
