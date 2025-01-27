@@ -5,7 +5,7 @@ import Leaderboard from "./components/Leaderboard";
 
 function App() {
   return (
-      <div className="h-full flex flex-col justify-center items-center px-4 gap-8">
+      <div className="h-full flex flex-col justify-center items-center px-4 gap-8 overflow-x-hidden">
         <AddUser />
         <SelectUser />
         <Leaderboard />
