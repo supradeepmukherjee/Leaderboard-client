@@ -1,12 +1,12 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { useToast } from "@/hooks/use-toast";
+import axios from 'axios';
+import { FormEvent, useState } from "react";
 import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
-import { useToast } from "@/hooks/use-toast"
-import axios from 'axios'
 
 const AddUser = () => {
   const [name, setName] = useState('')
   const { toast, } = useToast()
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = () => {
   };
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
