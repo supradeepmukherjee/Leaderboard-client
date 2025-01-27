@@ -1,16 +1,14 @@
 import AddUser from "./components/AddUser";
-import SelectUser from "./components/SelectUser";
-import { Toaster } from "@/components/ui/toaster"
 import Leaderboard from "./components/Leaderboard";
+import SelectUser from "./components/SelectUser";
 
 function App() {
   return (
-      <div className="h-full flex flex-col justify-center items-center px-4 gap-8 overflow-x-hidden">
-        <AddUser />
-        <SelectUser />
-        <Leaderboard />
-        <Toaster />
-      </div>
+    <div className="h-full flex flex-col justify-center items-center px-4 gap-8 overflow-x-hidden">
+      <AddUser />
+      <SelectUser />
+      <Leaderboard />
+    </div>
   );
 }
 
