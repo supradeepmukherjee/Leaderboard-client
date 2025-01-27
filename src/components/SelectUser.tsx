@@ -47,7 +47,7 @@ const SelectUser = () => {
         console.log(err)
         toast({
           variant: "destructive",
-          title: err?.response?.data?.msg || "Uh oh! Something went wrong while fetching Users' Names"
+          title: err?.response?.data?.msg || "Uh oh! Something went wrong while fetching Names of Users"
         })
       })
   }, [])

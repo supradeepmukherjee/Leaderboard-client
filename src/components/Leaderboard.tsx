@@ -10,48 +10,6 @@ import { ArrowUpDown, ChevronDown } from "lucide-react"
 import { useEffect, useState } from "react"
 import DialogTable from "./DialogTable"
 
-// const Leaderboard = () => {
-//   const [users, setUsers] = useState([]);
-//   useEffect(() => {
-//     axios.get(import.meta.env.VITE_SERVER + '/leaderboard')
-//       .then(({ data }) => setUsers(data.users))
-//       .catch(err => {
-//         console.log(err)
-//         toast({
-//           variant: "destructive",
-//           title: err?.response?.data?.msg || "Uh oh! Something went wrong while fetching Users' Complete Data"
-//         })
-//       })
-//   }, [])
-//   return (
-//     <div className="border-t-2 w-screen">
-//       <h2 className="mb-10 text-xl text-center mt-10 sm:text-5xl dark:text-white text-black">
-//         Leaderboard
-//       </h2>
-//       <div className="flex justify-center gap-4 w-[60vw] m-auto">
-//         <Table>
-//           <TableHeader>
-//             <TableRow>
-//               <TableHead className="w-[100px]">Invoice</TableHead>
-//               <TableHead>Status</TableHead>
-//               <TableHead>Method</TableHead>
-//               <TableHead className="text-right">Amount</TableHead>
-//             </TableRow>
-//           </TableHeader>
-//           <TableBody>
-//             <TableRow>
-//               <TableCell className="font-medium">INV001</TableCell>
-//               <TableCell>Paid</TableCell>
-//               <TableCell>Credit Card</TableCell>
-//               <TableCell className="text-right">$250.00</TableCell>
-//             </TableRow>
-//           </TableBody>
-//         </Table>
-//       </div>
-//     </div>
-//   )
-// }
-
 const columns: ColumnDef<{
   name: string,
   points: number,
@@ -146,7 +104,7 @@ const Leaderboard = () => {
         console.log(err)
         toast({
           variant: "destructive",
-          title: err?.response?.data?.msg || "Uh oh! Something went wrong while fetching Users' Complete Data"
+          title: err?.response?.data?.msg || "Uh oh! Something went wrong while fetching Users Complete Data"
         })
       })
   }, [])
